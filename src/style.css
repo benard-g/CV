@@ -1,0 +1,164 @@
+/*
+ * Page format
+ */
+html {
+    background-color: grey;
+}
+
+body {
+    background-color: white;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 2% auto;
+    padding: 0.1cm 1cm;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+@page {
+    margin: 0;
+}
+
+/*
+ * Page layout
+ */
+.header-box {
+    height: 15%;
+    margin-bottom: 0.2cm;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-box-left {
+    width: 25%;
+}
+
+.section-box-right {
+    width: 70%;
+}
+
+/*
+ * Header
+ */
+.header-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-box > img {
+    height: 85%;
+    border-radius: 50%;
+    border: solid 5px black;
+    z-index: 10;
+    /* To be on top of the bar */
+    margin-left: 5%;
+}
+
+.header-box > h1 {
+    margin-left: 5%;
+    font-size: 28pt;
+    padding-bottom: 3%;
+}
+
+.header-box>.horizontal-bar {
+    position: absolute;
+    right: 5%;
+    top: 65%;
+    width: 80%;
+    height: 0.3cm;
+    background-color: black;
+    -webkit-print-color-adjust: exact;
+    /* Otherwise it isn't printed */
+}
+
+/*
+ * Left section
+ */
+
+/*
+ * Right section
+ */
+.section {
+    width: 100%;
+    margin-bottom: 0.3cm;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    border-bottom: solid 1px black;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.section-title > img {
+    height: 0.8cm;
+}
+
+.section-title > h2 {
+    margin: 0;
+    margin-left: 0.2cm;
+    font-size: 20pt;
+}
+
+.section-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-content-date {
+    width: 10%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.section-content-date > div {
+    margin: 3px 0;
+}
+
+.section-content {
+    flex-grow: 1;
+}
+
+.section-content h3 {
+    margin-bottom: 5px;
+    font-size: 11pt;
+}
+
+.section-content > p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-content-label {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/*
+ * Utils
+ */
+.spaced-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
