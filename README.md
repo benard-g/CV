@@ -1,3 +1,1 @@
 # CV
-
-My personnal CV
