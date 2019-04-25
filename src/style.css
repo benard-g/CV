@@ -27,7 +27,6 @@ h1, h2, h3, p {
  */
 .header-box {
     height: 15%;
-    margin-bottom: 0.2cm;
 }
 
 .section-container {
@@ -190,6 +189,11 @@ h1, h2, h3, p {
 .section-box-left h3
 {
     color: #0078d7;
+}
+
+.left-marged {
+    max-width: 95%;
+    margin-left: auto;
 }
 
 /*
