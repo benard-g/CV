@@ -47,36 +47,29 @@ h1, h2, h3, p {
  * Header
  */
 .header-box {
-    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 .header-box > img {
     height: 85%;
     border-radius: 50%;
     border: solid 5px black;
-    z-index: 10;
-    /* To be on top of the bar */
-    margin-left: 5%;
 }
 
-.header-box > h1 {
-    margin-left: 5%;
+.header-content-container {
+    width: 60%;
+}
+
+.header-content-container > h1 {
     font-size: 28pt;
-    padding-bottom: 3%;
 }
 
-.header-box > .horizontal-bar {
-    position: absolute;
-    right: 5%;
-    top: 65%;
-    width: 80%;
-    height: 0.3cm;
-    background-color: black;
-    -webkit-print-color-adjust: exact;
-    /* Otherwise it isn't printed */
+.header-content-container > p {
+    font-size: 20pt;
+    margin-top: 10px;
 }
 
 /*
